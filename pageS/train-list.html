@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train List | IRCTC Redesign</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">🚆 IRCTC</div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="train-booking.html">Book Ticket</a></li>
+                <li><a href="train-list.html">Train List</a></li>
+                <li><a href="track-train.html">Track Train</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="train-list-container">
+        <h2>Available Trains</h2>
+
+        <div class="filter-options">
+            <input type="text" id="search" placeholder="Search Train Name...">
+            <select id="sort">
+                <option value="name">Sort by Name</option>
+                <option value="departure">Sort by Departure Time</option>
+                <option value="arrival">Sort by Arrival Time</option>
+            </select>
+        </div>
+
+        <table class="train-table">
+            <thead>
+                <tr>
+                    <th>Train Name</th>
+                    <th>Departure</th>
+                    <th>Arrival</th>
+                    <th>Duration</th>
+                    <th>Class</th>
+                </tr>
+            </thead>
+            <tbody id="train-list">
+                <!-- Dynamic Train Data Will Load Here -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script defer src="../js/animations.js"></script>
+</body>
+
+</html>

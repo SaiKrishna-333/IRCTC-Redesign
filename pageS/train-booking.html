@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Booking | IRCTC Redesign</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">🚆 IRCTC</div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="train-booking.html">Book Ticket</a></li>
+                <li><a href="train-list.html">Train List</a></li>
+                <li><a href="track-train.html">Track Train</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="booking-container">
+        <h2>Book Your Train Ticket</h2>
+        <form>
+            <div class="input-group">
+                <label for="from">From</label>
+                <input type="text" id="from" placeholder="Enter departure city" required>
+            </div>
+            <div class="input-group">
+                <label for="to">To</label>
+                <input type="text" id="to" placeholder="Enter destination city" required>
+            </div>
+            <div class="input-group">
+                <label for="date">Travel Date</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="input-group">
+                <label for="class">Class</label>
+                <select id="class">
+                    <option>General</option>
+                    <option>AC 3-Tier</option>
+                    <option>AC 2-Tier</option>
+                    <option>AC First Class</option>
+                </select>
+            </div>
+            <button type="submit" class="booking-btn">Search Trains</button>
+        </form>
+    </section>
+</body>
+
+</html>
