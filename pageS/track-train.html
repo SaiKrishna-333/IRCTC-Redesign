@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Train | IRCTC Redesign</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">🚆 IRCTC</div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="train-booking.html">Book Ticket</a></li>
+                <li><a href="train-list.html">Train List</a></li>
+                <li><a href="track-train.html">Track Train</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="tracking-container">
+        <h2>Track Your Train</h2>
+        <div class="input-group">
+            <label for="train-number">Enter Train Number</label>
+            <input type="text" id="train-number" placeholder="e.g. 12345" required>
+            <button id="track-btn">Track Train</button>
+        </div>
+        <div id="map"></div>
+        <div id="train-status"></div> <!-- Added to display train status -->
+    </section>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script defer src="../js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script defer src="../js/animations.js"></script>
+</body>
+
+</html>
